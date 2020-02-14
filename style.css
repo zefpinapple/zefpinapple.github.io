@@ -2,5 +2,11 @@ body {
     min-width: 100%;
     min-height: 100%;
     font-family: sans-serif;
-    
+
+}
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

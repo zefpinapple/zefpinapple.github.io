@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>Shifty</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper indigo">
+        <a href="#" class="brand-logo center">Get Shifty</a>
+        <ul id="nav-mobile" class="left">
+          <li><a href="sass.html">Edit Timetable</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <ul id="ttble" class="collapsible popout">
+        
+      </div>
+    </div>
+    
+    <script id="timetable-template" type="text/x-handlebars-template">
+      <li>
+        <div class="collapsible-header">
+          Week Commencing {{WC}}
+        </div>
+        <div class="collapsible-body">
+          <table class="striped">
+            <!-- <thead>
+              <tr>
+                <th>Week Commencing:</th>
+                <th>{{WC}}</th>
+              </tr>
+            </thead> -->
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>{{Monday}}</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>{{Tuesday}}</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>{{Wednesday}}</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>{{Thursday}}</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>{{Friday}}</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>{{Saturday}}</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>{{Sunday}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="gShift.js"></script>
+  </body>
+</html>

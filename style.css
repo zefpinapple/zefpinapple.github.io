@@ -1,0 +1,64 @@
+html {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#hero {
+    width: 100%;
+
+
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    background: #b8ccc0;
+}
+
+#content {
+    width: calc(100% - 50px);
+    min-height: 100%;
+    color: #F6F5F7;
+    margin: 25px;
+}
+
+.weekContainer {
+    width: 100%;
+    border-radius: 15px;
+    background: #b8ccc0;
+    box-shadow:  20px 20px 60px #9cada3, 
+                 -20px -20px 60px #d4ebdd;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.wc {
+    width: 90%;
+    height: 100%;
+}
+
+.day {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 15px;
+    background: #b8ccc0;
+    box-shadow: inset 20px 20px 60px #9cada3, 
+                inset -20px -20px 60px #d4ebdd;
+}
+
+.dayLabel {
+
+}
